@@ -107,8 +107,6 @@ function addReview(existingArray){
   return existingArray
 }
 
-addReview(reviews)
-
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
@@ -121,8 +119,8 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(recArray, findIndex) {
+  return `${recArray[findIndex].name} gave the restaurant a ${recArray[findIndex].rating} star review, and their feedback was: ${recArray[findIndex].feedback}`
 }
 
 
@@ -140,10 +138,11 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(objArray) {
+  return `${objArray[objArray.length - 1].name} gave the restaurant a ${objArray[objArray.length - 1].rating} star review, and their feedback was: ${objArray[objArray.length - 1].feedback}`
 } 
 
+console.log(getLastReview(reviews))
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
